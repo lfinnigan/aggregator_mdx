@@ -10,6 +10,8 @@
     <xsl:output method="xml" indent="yes" encoding="UTF-8" />
     <xsl:strip-space elements="*"/>
     
+    <!-- run against aggregator_mdx/fixtures/dplahoutputsample.xml -->
+    
     <!-- drop nodes we don't care about, namely, header values -->
     <xsl:template match="text()|@*"/>
     <xsl:template match="//oai_dc:dc">
